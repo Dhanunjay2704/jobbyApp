@@ -1,92 +1,103 @@
-# Nxt Trendz
+# 🧑‍💼 Jobby App
 
-A modern e-commerce web application built with React that allows users to browse fashion products, apply filters, and manage their shopping cart.
-To view the project demo click on this link: https://kdhanunjaya.ccbp.tech/
+A React-based job search application.  
+The app allows users to authenticate, browse jobs, apply filters, and view detailed job information.
 
-## Features
+---
 
-- 🔐 User authentication with JWT tokens
-- 🛍️ Product browsing with category and price filters
-- ⭐ Rating-based product filtering
-- 🔍 Search functionality
-- 🛒 Shopping cart with quantity management
-- 📱 Responsive design for mobile and desktop
-- 🎨 Modern UI with loading states and error handling
+## 🔗 Live Demo
+👉 https://kdhanunjaya.ccbp.tech/
 
-## Tech Stack
+---
 
-- **Frontend**: React 17
-- **Routing**: React Router DOM
-- **State Management**: React Context API
-- **Styling**: CSS
-- **HTTP Client**: Fetch API
-- **Authentication**: JWT tokens stored in cookies
+## 📌 Features
 
-## Getting Started
+### 🔐 Authentication
+- Login with valid credentials
+- Display error message for invalid credentials
+- JWT-based authentication using cookies
+- Protected routes for authenticated users
 
-### Prerequisites
+### 🏠 Home Route
+- Home page after successful login
+- “Find Jobs” button navigates to Jobs route
 
-- Node.js (version 10.13 or higher)
-- npm or yarn
+### 💼 Jobs Route
+- Fetches and displays profile details
+- Fetches and displays jobs list
+- Loader during API calls
+- Failure view with Retry option
+- No Jobs view when jobs list is empty
+- Search jobs using keyword
+- Filter jobs by:
+  - Employment Type (multiple selection)
+  - Salary Range
+- Supports multiple filters simultaneously
 
-### Installation
+### 📄 Job Item Details Route
+- Displays job details
+- Shows similar jobs
+- Retry option on failure
+- Visit button opens company website in a new tab
 
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd nxt-trendz
-   ```
+### 🚫 Not Found Route
+- Displays Not Found page for invalid routes
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+### 🧭 Header
+- Logo navigates to Home
+- Home and Jobs navigation links
+- Logout button redirects to Login route
 
-3. Start the development server:
-   ```bash
-   npm start
-   ```
+---
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+## 🛠️ Tech Stack
 
-## Available Scripts
+- **Frontend:** React.js
+- **Routing:** React Router DOM
+- **API Calls:** Fetch API
+- **Authentication:** JWT (Cookies)
+- **Styling:** CSS
+- **Package Manager:** npm / pnpm
 
-- `npm start` - Runs the app in development mode
-- `npm test` - Launches the test runner
-- `npm run build` - Builds the app for production
-- `npm run lint` - Runs ESLint for code linting
-- `npm run format` - Formats code with Prettier
+---
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 src/
-├── components/          # Reusable UI components
-│   ├── Header/         # Navigation header
-│   ├── LoginForm/      # Authentication form
-│   ├── Products/       # Products page
-│   ├── Cart/          # Shopping cart
-│   └── ...
-├── context/            # React Context for state management
-├── App.js             # Main application component
-├── index.js           # Application entry point
-└── App.css           # Global styles
+├── components/
+│   ├── Login/
+│   ├── Home/
+│   ├── Jobs/
+│   ├── JobItemDetails/
+│   ├── Header/
+│   ├── NotFound/
+│   ├── Profile/
+│   ├── Filters/
+│
+├── App.js
+├── index.js
+└── setupTests.js
 ```
 
-## API Endpoints
+> All components are placed inside the `src/components` directory as per instructions.
 
-The app integrates with the following APIs:
-- `https://apis.ccbp.in/login` - User authentication
-- `https://apis.ccbp.in/products` - Product catalog
+---
 
-## Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Run tests and linting
-5. Submit a pull request
+## 🚀 Getting Started
 
-## License
+### Install Dependencies
+```bash
+npm install
+```
 
-This project is part of a learning curriculum and is not licensed for commercial use.
+### Start the Application
+```bash
+npm start
+```
+
+---
+
+
+Happy Coding 🚀
