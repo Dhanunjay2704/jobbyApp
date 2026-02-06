@@ -1,6 +1,7 @@
 # Nxt Trendz
 
 A modern e-commerce web application built with React that allows users to browse fashion products, apply filters, and manage their shopping cart.
+To view the project demo click on this link: https://kdhanunjaya.ccbp.tech/
 
 ## Features
 
